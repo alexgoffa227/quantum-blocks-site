@@ -8,42 +8,125 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-white min-h-screen flex flex-col">
-    <header class="py-12 px-4 text-center border-b border-gray-100">
-        <h1 class="text-4xl font-bold tracking-tight text-gray-900 mb-2">Quantum Blocks</h1>
-        <p class="text-lg text-gray-600">Building Science & Technology Foundations for Kids</p>
-    </header>
-
-    <main class="flex-grow container mx-auto px-4 py-12 max-w-4xl">
-        <section class="text-center mb-16">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-4">Welcome!</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">
-                Quantum Blocks is a foundation dedicated to sparking curiosity and building strong science and technology fundamentals in children from an early age.
-            </p>
-        </section>
-
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-gray-900 rounded-lg mb-4 mx-auto"></div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-2">Hands-On Learning</h3>
-                <p class="text-gray-600">Fun, interactive activities with real science and engineering concepts.</p>
+    <!-- Navigation -->
+    <nav class="border-b border-gray-100">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-gray-900">Quantum Blocks</div>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+                <a href="#what-we-teach" class="text-gray-600 hover:text-gray-900">What We Teach</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-gray-900">How It Works</a>
+                <a href="#apply" class="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800">Apply Now</a>
             </div>
+        </div>
+    </nav>
 
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-gray-900 rounded-lg mb-4 mx-auto"></div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-2">Modern Skills</h3>
-                <p class="text-gray-600">From coding basics to robotics, we prepare kids for tomorrow's world.</p>
+    <!-- Hero Section -->
+    <section class="relative">
+        <div class="absolute inset-0 bg-gray-900 opacity-10"></div>
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+             alt="Children learning science" 
+             class="w-full h-[500px] object-cover">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center max-w-3xl px-4">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Unlock Your Child's Potential for Tomorrow's World</h1>
+                <p class="text-xl text-white mb-8">Quantum Blocks is an exclusive program for a select group of curious young minds. We equip children with the foundational skills in science and technology that will define the next generation of innovators.</p>
+                <div class="space-x-4">
+                    <a href="apply.html" class="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">Apply for Quantum Blocks</a>
+                    <a href="#about" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900">Discover Our Approach</a>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-gray-900 rounded-lg mb-4 mx-auto"></div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-2">Curiosity First</h3>
-                <p class="text-gray-600">We nurture inquisitive minds and a love of discovery!</p>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Quantum Blocks?</h2>
+                    <p class="text-gray-600 mb-6">Most children learn facts. A few learn how to think.</p>
+                    <p class="text-gray-600">At Quantum Blocks, we go beyond content—we teach the mental tools and mindsets that unlock lifelong learning and creative problem-solving.</p>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Who is this for?</h2>
+                    <p class="text-gray-600">Quantum Blocks is designed for children (ages 6–12) who display exceptional curiosity, aptitude, or drive. We work with families who value depth, challenge, and real impact.</p>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="py-6 px-4 text-center border-t border-gray-100">
-        <p class="text-gray-600">&copy; 2025 Quantum Blocks &mdash; Inspiring the next generation of innovators.</p>
+    <!-- What We Teach -->
+    <section id="what-we-teach" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">What We Teach</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Scientific Thinking</h3>
+                    <p class="text-gray-600">Curiosity, experimentation, and evidence-based reasoning.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Computational Skills</h3>
+                    <p class="text-gray-600">Logic, coding, and breaking down complex problems.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Growth Mindset</h3>
+                    <p class="text-gray-600">Resilience, adaptability, and a love of learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">How It Works</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Small Cohorts</h3>
+                    <p class="text-gray-600">Intensive, hands-on sessions with close mentorship.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Personalized Approach</h3>
+                    <p class="text-gray-600">Adapting to each child's strengths and interests.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Real-World Projects</h3>
+                    <p class="text-gray-600">Building, experimenting, and presenting ideas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="py-20 relative">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2022&q=80" 
+             alt="Future innovators" 
+             class="w-full h-[400px] object-cover">
+        <div class="absolute inset-0 bg-gray-900 opacity-60"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center max-w-3xl px-4">
+                <h2 class="text-3xl font-bold text-white mb-6">Not for Everyone—But for the Ones Who Will Change Everything</h2>
+                <p class="text-xl text-white mb-8">By focusing on a select group, we multiply our impact. Our alumni are prepared not just to succeed, but to lead and shape the future.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="apply" class="py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Ready to Begin the Journey?</h2>
+            <div class="space-x-4">
+                <a href="apply.html" class="bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800">Apply for a Spot</a>
+                <a href="#" class="bg-transparent border-2 border-gray-900 text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 border-t border-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600">&copy; 2025 Quantum Blocks &mdash; Building the foundation for tomorrow's scientific leaders.</p>
+        </div>
     </footer>
 </body>
 </html>
