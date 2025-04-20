@@ -4,44 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quantum Blocks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <!-- Optional: Place your logo image here -->
-        <!-- <img src="assets/logo.png" alt="Quantum Blocks Logo" class="logo"> -->
-        <h1>Quantum Blocks</h1>
-        <p class="subtitle">Building Science & Technology Foundations for Kids</p>
+<body class="bg-white min-h-screen flex flex-col">
+    <header class="py-12 px-4 text-center border-b border-gray-100">
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 mb-2">Quantum Blocks</h1>
+        <p class="text-lg text-gray-600">Building Science & Technology Foundations for Kids</p>
     </header>
-    <main>
-        <section class="intro">
-            <h2>Welcome!</h2>
-            <p>
+
+    <main class="flex-grow container mx-auto px-4 py-12 max-w-4xl">
+        <section class="text-center mb-16">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-4">Welcome!</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
                 Quantum Blocks is a foundation dedicated to sparking curiosity and building strong science and technology fundamentals in children from an early age.
             </p>
         </section>
-        <section class="features">
-            <div class="feature">
-                <div class="icon" id="block1"></div>
-                <h3>Hands-On Learning</h3>
-                <p>Fun, interactive activities with real science and engineering concepts.</p>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-gray-900 rounded-lg mb-4 mx-auto"></div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Hands-On Learning</h3>
+                <p class="text-gray-600">Fun, interactive activities with real science and engineering concepts.</p>
             </div>
-            <div class="feature">
-                <div class="icon" id="block2"></div>
-                <h3>Modern Skills</h3>
-                <p>From coding basics to robotics, we prepare kids for tomorrow's world.</p>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-gray-900 rounded-lg mb-4 mx-auto"></div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Modern Skills</h3>
+                <p class="text-gray-600">From coding basics to robotics, we prepare kids for tomorrow's world.</p>
             </div>
-            <div class="feature">
-                <div class="icon" id="block3"></div>
-                <h3>Curiosity First</h3>
-                <p>We nurture inquisitive minds and a love of discovery!</p>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-gray-900 rounded-lg mb-4 mx-auto"></div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Curiosity First</h3>
+                <p class="text-gray-600">We nurture inquisitive minds and a love of discovery!</p>
             </div>
         </section>
     </main>
-    <footer>
-        &copy; 2025 Quantum Blocks &mdash; Inspiring the next generation of innovators.
+
+    <footer class="py-6 px-4 text-center border-t border-gray-100">
+        <p class="text-gray-600">&copy; 2025 Quantum Blocks &mdash; Inspiring the next generation of innovators.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
 
