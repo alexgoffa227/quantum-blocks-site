@@ -6,18 +6,28 @@
     <title>Quantum Blocks Foundation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="translations.js"></script>
+    <script src="language-switcher.js"></script>
 </head>
 <body class="bg-white min-h-screen flex flex-col">
     <!-- Navigation -->
     <nav class="border-b border-gray-100">
         <div class="container mx-auto px-4 py-4">
             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0">
-                <div class="text-xl font-bold text-gray-900 text-center sm:text-left">Quantum Blocks Foundation</div>
+                <div class="flex items-center space-x-2">
+                    <span class="material-icons text-2xl text-gray-900">science</span>
+                    <div class="text-xl font-bold text-gray-900" data-i18n="nav.home">Quantum Blocks Foundation</div>
+                </div>
                 <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
-                    <a href="#about" class="text-gray-600 hover:text-gray-900 px-2 py-1">About</a>
-                    <a href="#what-we-teach" class="text-gray-600 hover:text-gray-900 px-2 py-1">What We Teach</a>
-                    <a href="#how-it-works" class="text-gray-600 hover:text-gray-900 px-2 py-1">How It Works</a>
-                    <a href="#apply" class="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 text-center w-full sm:w-auto">Apply</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 px-2 py-1" data-i18n="nav.about">About</a>
+                    <a href="#what-we-teach" class="text-gray-600 hover:text-gray-900 px-2 py-1" data-i18n="nav.what-we-teach">What We Teach</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-gray-900 px-2 py-1" data-i18n="nav.how-it-works">How It Works</a>
+                    <a href="#apply" class="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 text-center w-full sm:w-auto" data-i18n="nav.apply">Apply</a>
+                    <button id="language-switch" class="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded-lg transition-colors duration-200" data-i18n="nav.language">
+                        <span class="material-icons">language</span>
+                        <span>ภาษาไทย</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -31,11 +41,11 @@
              class="w-full h-[400px] sm:h-[500px] object-cover">
         <div class="absolute inset-0 flex items-center justify-center px-4">
             <div class="text-center max-w-3xl">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">Building Tomorrow's Scientific Leaders</h1>
-                <p class="text-lg sm:text-xl text-white mb-6 sm:mb-8">A foundation dedicated to nurturing exceptional young minds in science and technology, creating a pipeline of future innovators who will solve humanity's greatest challenges.</p>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6" data-i18n="hero.title">Building Tomorrow's Scientific Leaders</h1>
+                <p class="text-lg sm:text-xl text-white mb-6 sm:mb-8" data-i18n="hero.subtitle">A foundation dedicated to nurturing exceptional young minds in science and technology, creating a pipeline of future innovators who will solve humanity's greatest challenges.</p>
                 <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-                    <a href="apply.html" class="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">Apply for Our Program</a>
-                    <a href="#about" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900">Learn About Our Mission</a>
+                    <a href="apply.html" class="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100" data-i18n="hero.apply">Apply for Our Program</a>
+                    <a href="#about" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900" data-i18n="hero.learn">Learn About Our Mission</a>
                 </div>
             </div>
         </div>
@@ -46,13 +56,13 @@
         <div class="container mx-auto px-4 max-w-4xl">
             <div class="grid md:grid-cols-2 gap-8 sm:gap-12">
                 <div>
-                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Our Mission</h2>
-                    <p class="text-gray-600 mb-4 sm:mb-6">As a non-profit foundation, we believe that investing in exceptional young minds is an investment in humanity's future.</p>
-                    <p class="text-gray-600">We identify and nurture children with exceptional potential in science and technology, providing them with the tools, mentorship, and environment they need to develop into tomorrow's scientific leaders.</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6" data-i18n="about.mission">Our Mission</h2>
+                    <p class="text-gray-600 mb-4 sm:mb-6" data-i18n="about.mission.text1">As a non-profit foundation, we believe that investing in exceptional young minds is an investment in humanity's future.</p>
+                    <p class="text-gray-600" data-i18n="about.mission.text2">We identify and nurture children with exceptional potential in science and technology, providing them with the tools, mentorship, and environment they need to develop into tomorrow's scientific leaders.</p>
                 </div>
                 <div>
-                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Our Vision</h2>
-                    <p class="text-gray-600">We envision a world where the brightest young minds are empowered to tackle humanity's greatest challenges through scientific innovation and technological advancement.</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6" data-i18n="about.vision">Our Vision</h2>
+                    <p class="text-gray-600" data-i18n="about.vision.text">We envision a world where the brightest young minds are empowered to tackle humanity's greatest challenges through scientific innovation and technological advancement.</p>
                 </div>
             </div>
         </div>
@@ -61,19 +71,19 @@
     <!-- What We Teach -->
     <section id="what-we-teach" class="py-12 sm:py-20">
         <div class="container mx-auto px-4">
-            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">Our Educational Approach</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 text-center" data-i18n="teach.title">Our Educational Approach</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm border border-gray-100">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Scientific Thinking</h3>
-                    <p class="text-gray-600">Developing the ability to question, experiment, and understand fundamental principles that drive scientific discovery.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-i18n="teach.scientific">Scientific Thinking</h3>
+                    <p class="text-gray-600" data-i18n="teach.scientific.text">Developing the ability to question, experiment, and understand fundamental principles that drive scientific discovery.</p>
                 </div>
                 <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm border border-gray-100">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Computational Skills</h3>
-                    <p class="text-gray-600">Building the foundation for technological innovation through logic, coding, and problem-solving.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-i18n="teach.computational">Computational Skills</h3>
+                    <p class="text-gray-600" data-i18n="teach.computational.text">Building the foundation for technological innovation through logic, coding, and problem-solving.</p>
                 </div>
                 <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm border border-gray-100">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Leadership Development</h3>
-                    <p class="text-gray-600">Cultivating the mindset and skills needed to lead and inspire others in scientific and technological fields.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-i18n="teach.leadership">Leadership Development</h3>
+                    <p class="text-gray-600" data-i18n="teach.leadership.text">Cultivating the mindset and skills needed to lead and inspire others in scientific and technological fields.</p>
                 </div>
             </div>
         </div>
@@ -82,19 +92,19 @@
     <!-- How It Works -->
     <section id="how-it-works" class="py-12 sm:py-20 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">Our Program Structure</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 text-center" data-i18n="works.title">Our Program Structure</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm border border-gray-100">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Selective Admission</h3>
-                    <p class="text-gray-600">Identifying children who demonstrate exceptional potential and passion for science and technology.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-i18n="works.admission">Selective Admission</h3>
+                    <p class="text-gray-600" data-i18n="works.admission.text">Identifying children who demonstrate exceptional potential and passion for science and technology.</p>
                 </div>
                 <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm border border-gray-100">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Personalized Learning</h3>
-                    <p class="text-gray-600">Tailoring our approach to each child's unique strengths, interests, and learning style.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-i18n="works.learning">Personalized Learning</h3>
+                    <p class="text-gray-600" data-i18n="works.learning.text">Tailoring our approach to each child's unique strengths, interests, and learning style.</p>
                 </div>
                 <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm border border-gray-100">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Long-term Support</h3>
-                    <p class="text-gray-600">Providing ongoing mentorship and resources to support our students' growth and development.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-i18n="works.support">Long-term Support</h3>
+                    <p class="text-gray-600" data-i18n="works.support.text">Providing ongoing mentorship and resources to support our students' growth and development.</p>
                 </div>
             </div>
         </div>
@@ -108,8 +118,8 @@
         <div class="absolute inset-0 bg-gray-900 opacity-60"></div>
         <div class="absolute inset-0 flex items-center justify-center px-4">
             <div class="text-center max-w-3xl">
-                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">Creating a Pipeline of Future Innovators</h2>
-                <p class="text-lg sm:text-xl text-white">By investing in exceptional young minds today, we're building the foundation for tomorrow's scientific breakthroughs and technological advancements.</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6" data-i18n="impact.title">Creating a Pipeline of Future Innovators</h2>
+                <p class="text-lg sm:text-xl text-white" data-i18n="impact.text">By investing in exceptional young minds today, we're building the foundation for tomorrow's scientific breakthroughs and technological advancements.</p>
             </div>
         </div>
     </section>
@@ -117,18 +127,18 @@
     <!-- Call to Action -->
     <section id="apply" class="py-12 sm:py-20">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">Join Our Mission</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto mb-6 sm:mb-8">We're looking for children who demonstrate exceptional potential and passion for science and technology. If you believe your child might be a good fit, we encourage you to apply.</p>
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8" data-i18n="cta.title">Join Our Mission</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-6 sm:mb-8" data-i18n="cta.text">We're looking for children who demonstrate exceptional potential and passion for science and technology. If you believe your child might be a good fit, we encourage you to apply.</p>
             <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-                <a href="apply.html" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800">Apply for Our Program</a>
-                <a href="#" class="bg-transparent border-2 border-gray-900 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 hover:text-white">Support Our Mission</a>
+                <a href="apply.html" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800" data-i18n="cta.apply">Apply for Our Program</a>
+                <a href="#" class="bg-transparent border-2 border-gray-900 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 hover:text-white" data-i18n="cta.support">Support Our Mission</a>
             </div>
         </div>
     </section>
 
     <footer class="py-6 sm:py-8 border-t border-gray-100">
         <div class="container mx-auto px-4 text-center">
-            <p class="text-gray-600 text-sm sm:text-base">&copy; 2025 Quantum Blocks Foundation &mdash; A non-profit organization dedicated to nurturing tomorrow's scientific leaders.</p>
+            <p class="text-gray-600 text-sm sm:text-base" data-i18n="footer.copyright">&copy; 2025 Quantum Blocks Foundation &mdash; A non-profit organization dedicated to nurturing tomorrow's scientific leaders.</p>
         </div>
     </footer>
 </body>
